@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="demo.css" />
+</head>
+<body>
+    <h1>Relative Positioning</h1>
+    <div id="example-relative" class="example-container">
+        <div class="box">1. Block</div>
+        <div class="box">2. Relative Block</div>
+        <div class="box">3. Block</div>
+        <div class="box">4. Relative Block</div>
+    </div>
+    <div class="bottom">
+        Overlapping!
+    </div>
+
+    <h1>Absolute Positioning</h1>
+    <p>Positioned relative to the nearest positioned ancestor</p>
+    <div id="example-absolute" class="example-container">
+        <div class="box">1. Block</div>
+        <div class="box">2. Block</div>
+        <div class="box">3. Absolute Block</div>
+        <div class="box">4. Block</div>
+    </div>
+
+    <h1>Fixed Positioning</h1>
+    <p>Similar to absolute but relative to the viewport or nearest ancestor with filter property</p>
+    <div id="example-fixed" class="example-container">
+        <div class="box">1. Fixed Block</div>
+        <div class="box">2. Block</div>
+        <div class="box">3. Block</div>
+        <div class="box">4. Block</div>
+    </div>
+
+    <h1>Sticky Positioning</h1>
+    <p>Sticky positioning can be thought of as a hybrid of relative and fixed positioning. A stickily positioned element is treated as relatively positioned until it crosses a specified threshold, at which point it is treated as fixed until it reaches the boundary of its parent</p>
+    <div id="example-sticky" class="example-container">
+        <div>
+            <div class="sticky">
+                Sticky Header 1
+            </div>
+            <div class="box-block">1. Block</div>
+            <div class="box-block">2. Block</div>
+            <div class="box-block">3. Block</div>
+            <div class="box-block">4. Block</div>
+            <div class="box-block">5. Block</div>
+            <div class="box-block">6. Block</div>
+        </div>
+        <div>
+            <div class="box-block">1. Another Parent Block</div>
+            <div class="box-block">2. Block</div>
+            <div class="box-block">3. Block</div>
+            <div class="box-block">4. Block</div>
+            <div class="box-block">5. Block</div>
+            <div class="box-block">6. Block</div>
+            <div class="box-block">7. Block</div>
+            <div class="box-block">8. Block</div>
+            <div class="box-block">9. Block</div>
+        </div>
+    </div>
+</body>
+</html>
